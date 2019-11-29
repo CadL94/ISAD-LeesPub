@@ -17,13 +17,11 @@ CREATE TABLE [dbo].[Category]
     CategoryID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,  -- Primary Key column. Datatype INT : will only allow whole numbers. 
     CategoryName NVARCHAR(20) NOT NULL,                 -- Datatype NVARCHAR(20) : Maximum 20 unicode characters.
     CategoryDescription NVARCHAR(MAX) NOT NULL,         -- Datatype NVARCHAR(Max) : Max unicode characters.
-<<<<<<< HEAD
     CategoryImage NVARCHAR(60) NOT NULL ,                -- Datatype NVARCHAR(60): Stores image filepath. 
     DateAdded DATETIME DEFAULT GETUTCDATE() NOT NULL,    -- Datatype DATETIME : Gets date and time of when category was added.
-=======
     CategoryImage NVARCHAR(60) NOT NULL,                -- Datatype NVARCHAR(60) : Stores image filepath. 
     DateAdded DATETIME DEFAULT GETUTCDATE(),            -- Datatype DATETIME : Gets date and time of when category was added.
->>>>>>> 0277138f93fb80eb4a6db7a2a8cdbe485c9375a0
+
 
 
 );
