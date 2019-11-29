@@ -17,8 +17,13 @@ CREATE TABLE [dbo].[Category]
     CategoryID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,  -- Primary Key column. Datatype INT : will only allow whole numbers. 
     CategoryName NVARCHAR(20) NOT NULL,                 -- Datatype NVARCHAR(20) : Maximum 20 unicode characters.
     CategoryDescription NVARCHAR(MAX) NOT NULL,         -- Datatype NVARCHAR(Max) : Max unicode characters.
+<<<<<<< HEAD
+    CategoryImage NVARCHAR(60) NOT NULL ,                -- Datatype NVARCHAR(60): Stores image filepath. 
+    DateAdded DATETIME DEFAULT GETUTCDATE() NOT NULL,    -- Datatype DATETIME : Gets date and time of when category was added.
+=======
     CategoryImage NVARCHAR(60) NOT NULL,                -- Datatype NVARCHAR(60) : Stores image filepath. 
     DateAdded DATETIME DEFAULT GETUTCDATE(),            -- Datatype DATETIME : Gets date and time of when category was added.
+>>>>>>> 0277138f93fb80eb4a6db7a2a8cdbe485c9375a0
 
 
 );
@@ -56,7 +61,7 @@ CREATE TABLE [dbo].[Tables]
 (
     TableID TINYINT NOT NULL IDENTITY (1,1) PRIMARY KEY,    -- Primary Key column. Datatype TINYINT : Will only allow whole numbers maximum 255.
     TableName NVARCHAR(20) NOT NULL UNIQUE,                         -- Datatype NVARCHAR(20) : Maximum 20 unicode characters. UNIQUE : Each table should have a different name.                                        
-    DateAdded DATETIME DEFAULT GETUTCDATE(),                 -- Datatype DATETIME : Gets date and time. 
+    DateAdded DATETIME DEFAULT GETUTCDATE() NOT NULL,                 -- Datatype DATETIME : Gets date and time. 
    
 
 
@@ -73,7 +78,7 @@ GO
 CREATE TABLE [dbo].[Orders]
 (
     OrderID INT NOT NULL IDENTITY (1000,1) PRIMARY KEY,               -- Primary Key column. Datatype INT : Will only allow whole numbers.
-    TableID TINYINT REFERENCES Tables(TableID),         -- Foreign Key column. References 'TableID' in 'Tables' table. Datatype TINYINT : Will only allow whole numbers maximum 255.
+    TableID TINYINT REFERENCES Tables(TableID) NOT NULL,         -- Foreign Key column. References 'TableID' in 'Tables' table. Datatype TINYINT : Will only allow whole numbers maximum 255.
     OrderDate DATETIME DEFAULT GETUTCDATE(),            -- Datatype DATETIME : Gets date and time of order date.  
     
 );
