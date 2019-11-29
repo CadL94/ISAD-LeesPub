@@ -1,2 +1,2 @@
-# ISAD-LeesPub
-Coursework files for isad251 2019/2020
+# AD-LeesPub
+Coursework files for 2019/2020
