@@ -19,9 +19,7 @@ CREATE TABLE [dbo].[Category]
     CategoryDescription NVARCHAR(MAX) NOT NULL,         -- Datatype NVARCHAR(Max) : Max unicode characters.
     CategoryImage NVARCHAR(60) NOT NULL ,                -- Datatype NVARCHAR(60): Stores image filepath. 
     DateAdded DATETIME DEFAULT GETUTCDATE() NOT NULL,    -- Datatype DATETIME : Gets date and time of when category was added.
-    CategoryImage NVARCHAR(60) NOT NULL,                -- Datatype NVARCHAR(60) : Stores image filepath. 
-    DateAdded DATETIME DEFAULT GETUTCDATE(),            -- Datatype DATETIME : Gets date and time of when category was added.
-
+    
 
 
 );
