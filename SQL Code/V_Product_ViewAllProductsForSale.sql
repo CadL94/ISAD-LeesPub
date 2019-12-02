@@ -3,6 +3,6 @@
 CREATE VIEW dbo.V_Products_ViewAllProductsForSale
 AS
 SELECT ProductID, ProductName, ProductDescription, Price, QuantityPerUnit, UnitsInStock, RestockLevel, CategoryID
-    From dbo.Product
-    WHERE Available = 1
-    GO
+From dbo.Product
+WHERE Available = 1
+GO
