@@ -1,3 +1,5 @@
+--Creats a stored procedure that gets product details when searched by name
+
 CREATE PROCEDURE dbo.spProduct_SearchByName
    @ProductName NVARCHAR(50) 
 AS
