@@ -8,4 +8,3 @@ BEGIN
     FROM dbo.Orders, dbo.OrderDetails 
     WHERE Orders.OrderID = @OrderID
 END
-GO
