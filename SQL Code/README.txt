@@ -1,3 +1,8 @@
+Files beginning with TRIG = Triggers
+Files beginning with V_ = Views
+Files beginning with sp = Stored procedures
+
+
 28/11/2019 -- Added create tables SQL code
 
 
@@ -13,3 +18,6 @@
 
 
 03/11/2019 -- Added SQL code for stored procedures and triggers 
+
+
+06/12/2019 -- Added SQL code for stored procedures
