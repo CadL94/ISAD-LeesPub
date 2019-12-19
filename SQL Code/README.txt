@@ -21,3 +21,5 @@ Files beginning with sp = Stored procedures
 
 
 06/12/2019 -- Added SQL code for stored procedures
+
+19/12/2019 -- Added SQL code for Trigger
