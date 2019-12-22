@@ -13,16 +13,7 @@ INSERT INTO dbo.Tables (
             (
             
             'Table two' --Table Name
-    
-            ),
-            (
-                
-            'Table three'  --Table Name
-            
-            ), 
-            (
-            
-            'Table four' --Table Name
+
     
             );
           
