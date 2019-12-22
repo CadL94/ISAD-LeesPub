@@ -1,5 +1,3 @@
---Creates a new database called 'LeesPub'
-
 Create DATABASE LeesPub;
 GO
 
@@ -7,10 +5,7 @@ GO
 
 USE LeesPub
 
-
-
-
--- Creates a new table called 'Category'
+--Creates a new table called 'Category'
 
 CREATE TABLE [dbo].[Category]
 (
@@ -89,7 +84,7 @@ GO
 
 CREATE TABLE [dbo].[OrderDetails]
 (
-    OrderID INT NOT NULL REFERENCES Orders(OrderID),            -- Foreign key column. References 'OrderID' in 'Orders' table. Datatype INT : Will only allow whole numbers.
+    OrderID INT NULL REFERENCES Orders(OrderID),                -- Foreign key column. References 'OrderID' in 'Orders' table. Datatype INT : Will only allow whole numbers.
     ProductID INT NOT NULL REFERENCES Product(ProductID),       -- Foreign key column. References 'ProductID' in 'Products' table. Datatype INT : Will only allow whole numbers.
     Price SMALLMONEY NOT NULL,                                  -- Datatype SMALLMONEY : Money data. Uses less memory then MONEY.
     Quantity SMALLINT NOT NULL,                                 -- DataType SMALLINT : Will only allow whole numbers. 
