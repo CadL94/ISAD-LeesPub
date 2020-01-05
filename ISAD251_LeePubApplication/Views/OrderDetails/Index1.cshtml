@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ISAD251_Lee.Models.OrderDetails>
+
+@{
+    Layout ="~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Admin";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderStatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Order)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OrderStatus)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Order.OrderId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.ProductDescription)
+                    </td>
+                    <td>
+
+
+                      
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+   
+
+
+</body>
+</html>
