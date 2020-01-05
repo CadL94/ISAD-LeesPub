@@ -17,7 +17,7 @@ INSERT INTO dbo.Product (
                     'Lemon Beer', 
                     'Beer that tastes like lemon',
                     '568ml', --Quantity
-                    '3.00',  --Price £
+                    '1',  --Price £
                     '1000',   --Units in stock
                     '20'    --Restock level
                     
@@ -28,7 +28,7 @@ INSERT INTO dbo.Product (
                     'Strawberry Beer',
                     'Beer that tastes like strawberrys',
                     '568ml', --Quantity
-                    '3.00',  --Price £    
+                    '1',  --Price £    
                     '1000',   --Units in stock 
                     '20'     --Restock level
                 
@@ -39,7 +39,7 @@ INSERT INTO dbo.Product (
                     'Sparkling Water',
                     'Bottle of sparkling water',
                     '600ml', --Quantity
-                    '1.50',  --Price £
+                    '1',  --Price £
                     '1000',   --Units in stock   
                     '20'     --Restock level
              
