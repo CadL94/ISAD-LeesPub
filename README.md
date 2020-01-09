@@ -1,5 +1,5 @@
 LeesPub Application
-Coursework files for 2019/2020
+Coursework files for 2019/2020.
 
 Image asset :
 
